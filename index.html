@@ -6,28 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css">
 </head>
 <body>
-    <h1>Hey Hey Hey, This Is Library</h1>
-    <form id="form">
-        <div class="field">
-            <label for="title">Book title</label>
-            <input type="text" id="title"/>
+    <header>
+        <h1>Hey Hey Hey, This Is Library</h1>
+        <div class="subheading">Welcome to your favorite online library!</div>
+    </header>
+    <main>
+    <div id="01" class="w3-modal">
+        <div class="w3-modal-content">
+            <form id="form">
+                <div class="field">
+                    <label for="title">Book title</label>
+                    <input type="text" id="title"/>
+                </div>
+                <div class="field">
+                    <label for="author">Author</label>
+                    <input type="text" id="author"/>
+                </div>
+                <div class="field">
+                    <label for="pages">Pages</label>
+                    <input type="text" id="pages"/>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="read" name="read" value="Read" checked> 
+                    <label for="read">Read</label><br>
+                    <input type="radio" id="not-read" name="read" value="Not Read">
+                    <label for="read">Not Read</label>
+                </div>
+            </form>
+            <div class="buttons">
+                <input type="button" class="submit" value="ADD BOOK">
+                <button class="decline">Decline</button>
+            </div>
         </div>
-        <div class="field">
-            <label for="author">Author</label>
-            <input type="text" id="author"/>
-        </div>
-        <div class="field">
-            <label for="pages">Pages</label>
-            <input type="text" id="pages"/>
-        </div>
-        <div class="field">
-            <label for="read">Read</label>
-            <input type="text" id="read"/>
-        </div>
-        <input type="button" class="submit" value="NEW BOOK">
-    </form>
+    </div>  
+    
+    <div class="table"></div>
+    <button class="new-book">NEW BOOK</button>
+    </main>
+    <footer>Made by Osaro</footer>
     <script src="scripts/script.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,135 @@
-form, div{
+html, body{
+    height: 100vh;
+    margin:0;
+    padding: 0;
+   
+}
+body{
     display: flex;
     flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 200px 0 200px;
+    background: #F4F9F9;
+    flex:1;
+    gap:20px;
+    min-height: 220px;
+}
+main{
+    background: #CCF2F4;
+    flex:2.5;
+    padding: 3% 200px 3% 200px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin: 0;
+}
+
+form, .field, .w3-modal{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap:5px;
+    padding: 40px 20px;
+}
+
+.buttons{
+    display: flex;
+    
+}
+.decline, .submit{
+    flex:1;
+    padding:10px;
+}
+.read, .not-read {
+    min-width: 100%;
+    padding: 10px 10px;
+    max-width: 80%;
+    border:none; 
+}
+
+.read{
+    background: greenyellow;
+}
+.not-read, .decline{
+    background: red;
+}
+
+.radio{
+    display: flex;
+    gap: 5px;
+}
+
+th{
+    text-align: start;
+    background-color: #A4EBF3;
     padding: 10px;
 }
+table{
+    font-size: 18px; 
+    border-collapse:collapse;
+    overflow:hidden;
+    width:100%;
+}
+td{
+    overflow:hidden;
+    padding: 0.5% 15px; 
+}
+td:nth-of-type(1){
+    min-width: 50%;
+}
+td:nth-of-type(2){
+    min-width:35%;
+}
+td:nth-of-type(3){
+    min-width:2%;
+}
+td:nth-of-type(4){
+    min-width:10%;
+}
+td:nth-of-type(5){
+    min-width:5%;
+}
+footer {
+    font-weight:550;
+    background: #AAAAAA;
+    flex:0;
+    text-align: center;
+    padding: 30px;
+}
+
+.new-book{
+    background-color: #555555;
+    color: white;
+    padding:1%;
+    min-width: 10%;
+    width: 15%;
+}
+button,.submit, .new-book{
+    border-radius: 5px;
+}
+.delete{
+    background: rgba(10, 10, 10, 0.2);
+    border: none;
+    color: whitesmoke;
+    width: 50%;
+    text-align: center;
+    font-weight: 400;
+    padding: 5% 5%;
+    
+}
+form{
+    background-color: #276678;
+    color: cornsilk;
+}
+.w3-modal-content{
+    width: 20% !important;
+}
+
